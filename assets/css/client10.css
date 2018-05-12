@@ -1,0 +1,24 @@
+body { font-family: 'Open Sans', sans-serif; font-size: 16px }
+code { font-size: 16px; }
+.main a { color: #005071; font-weight: bold; }
+.main a:hover { color: #5BC0DE; font-weight: bold; text-decoration: none; }
+.link { color: #005071; font-weight: bold; }
+.link:hover { color: #5BC0DE; font-weight: bold; text-decoration: none; }
+.header { padding-top: 12px; padding-bottom: 12px; background-color: #005071; background-image: linear-gradient(60deg, #227293, #004060); background: -moz-linear-gradient(60deg, #227293, #004060); }
+.header .flags { padding-top: 10px }
+.header .englishFlag {  margin-left: 20px }
+.header a:hover { cursor: pointer }
+label { font-weight: normal; }
+html, body { height: 100%; }
+img { max-width: 100%; height: auto; width: auto\9; }
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -180px; }
+#push { height: 180px; }
+#footer { margin-top: 60px; height: 120px; background-color: #005071; background-image: linear-gradient(60deg, #227293, #004060); background: -moz-linear-gradient(60deg, #227293, #004060); width: 100%; padding-top: 25px; text-align: center; }
+#footer a { color: #FFFFFF; margin-left: 10px; margin-right: 10px; }
+#footer a:hover { color: #3399CC; text-decoration: none; margin-left: 10px; margin-right: 10px; }
+.footLink { color: #FFFFFF ; font-size: 90%; margin-bottom: 15px; }
+.footLink>a { color: #FFFFFF; margin-left: 10px; margin-right: 10px; }
+.footLink>a:hover { color: #3399CC; text-decoration: none; margin-left: 10px; margin-right: 10px; }
+.footLink>span { margin-left: 10px; margin-right: 10px; }
+.copy { color: #3399CC; font-weight: bold; }
+.full-text-center { width: 100%; text-align: center; }
