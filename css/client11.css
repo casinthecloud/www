@@ -22,3 +22,48 @@ img { max-width: 100%; height: auto; width: auto\9; }
 .footLink>span { margin-left: 10px; margin-right: 10px; }
 .copy { color: #3399CC; font-weight: bold; }
 .full-text-center { width: 100%; text-align: center; }
+.row { margin-right: 0 }
+.galaxy {
+  background-image: url('../img/other/galaxy.jpg'); background-repeat:no-repeat; background-size: cover; height: 250px;
+}
+.galaxy h2 {
+  padding-top: 80px; color: #FFF;
+}
+.help .container {
+  padding-top: 15px; padding-bottom: 15px;background-color: #FAFAFA
+}
+.cas {
+  padding-bottom: 10px
+}
+.cas col-md-8 {
+  margin-top: 15px
+}
+.pac4j .container {
+  background-color: #FAFAFA
+}
+.pac4j .col-md-8 {
+  padding-top: 30px
+}
+p {
+  margin-top: 16px
+}
+.cas img {
+  margin-top: 40px;
+  margin-bottom: 30px
+}
+.pac4j img {
+  margin-top: 20px;
+  margin-bottom: 10px
+}
+.clients {
+  padding-top: 5px
+}
+.global-help {
+  padding-bottom: 15px
+}
+h4 {
+  margin-bottom: 0
+}
+.projectmanagement .container {
+  padding-top: 20px; padding-bottom: 40px; background-image: url('../img/other/clouds.jpg'); background-repeat:no-repeat; background-size: cover
+}
