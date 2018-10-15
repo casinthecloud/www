@@ -24,10 +24,10 @@ img { max-width: 100%; height: auto; width: auto\9; }
 .full-text-center { width: 100%; text-align: center; }
 .row { margin-right: 0 }
 .galaxy {
-  background-image: url('../img/other/galaxy.jpg'); background-repeat:no-repeat; background-size: cover; height: 250px;
+  background-image: url('../img/other/galaxy.jpg'); background-repeat:no-repeat; background-size: cover; height: 150px;
 }
 .galaxy h2 {
-  padding-top: 80px; color: #FFF;
+  padding-top: 35px; color: #FFF;
 }
 .help .container {
   padding-top: 15px; padding-bottom: 15px;background-color: #FAFAFA
@@ -35,8 +35,11 @@ img { max-width: 100%; height: auto; width: auto\9; }
 .cas {
   padding-bottom: 10px
 }
-.cas col-md-8 {
-  margin-top: 15px
+.cas .col-md-8 {
+  margin-top: 10px
+}
+.other .col-md-8 {
+  margin-top: 30px
 }
 .pac4j .container {
   background-color: #FAFAFA
@@ -51,15 +54,15 @@ p {
   margin-top: 40px;
   margin-bottom: 30px
 }
+.other img {
+  margin-top: 10px
+}
 .pac4j img {
   margin-top: 20px;
   margin-bottom: 10px
 }
 .clients {
   padding-top: 5px
-}
-.global-help {
-  padding-bottom: 15px
 }
 h4 {
   margin-bottom: 0
