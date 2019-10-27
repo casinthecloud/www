@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Authentication - security expertise: CAS, pac4j, OAuth, OpenID Connect, SAML, SSO, IAM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="CAS in the cloud, the CAS and pac4j consulting company" />
   <meta name="keywords" content="casinthecloud IAM CAS pac4j SSO github Open source committer Jérôme LELEU chairman expert Java security sécurité authentification authentication SAML OAuth OpenID Connect JWT LDAP J2E Play Spring Web MVC Spring Security Shiro" />
   <base href="/">
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,700,400' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap3.1.1.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/client13.css">
+  <link rel="stylesheet" href="/css/bootstrap-4.0.0.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/client14.css">
 </head>
 <body>
 
@@ -18,103 +18,51 @@
 
   <div class="header">
     <div class="container">
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5"><img alt="logo" src="img/logo/cas_in_the_cloud_logo.png" /></div>
-        <div class="col-md-5 text-right flags">
-          <a href="index.html">&rarr; FRANCAIS</a>
+      <nav class="navbar navbar-expand-lg">
+        <img alt="logo" src="img/logo/cas_in_the_cloud_logo.png" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <span class="navbar-text">
+            <a href="index.html">&#8680; FRANCAIS</a>
+          </span>
         </div>
-        <div class="col-md-1"></div>
-      </div>
+      </nav>
+      <h1>Consulting services for<br/>identity and access management.</h1>
     </div>
   </div>
 
-  <div class="main">
-
-    <div>
-
-      <div class="text-center help">
-        <div class="container">
-          <h4>
-            <p>I am <a href="https://www.linkedin.com/in/jleleu" target="_blank">Jérôme LELEU</a> <img src="img/other/jerome_leleu.jpg" width="40px" height="40px" /> and I founded <b>CAS in the cloud</b> in 2014.</p>
-
-            <p>I am available remotely for expert missions on CAS, pac4j, OAuth, OpenID Connect, SAML<br />or more generally on authentication, application security, SSO or IAM.</p>
-
-            <p>Contact me at <a href="mailto: jerome@casinthecloud.com">jerome&#64;casinthecloud.com</a></p>
-          </h4>
-        </div>
+  <div class="container">
+    <div class="presentation jerome">
+      <p>&#8680; I am <a href="https://www.linkedin.com/in/jleleu/?locale=en_US" target="_blank">Jérôme LELEU</a> <img src="img/other/jerome_leleu.jpg" width="40px" height="40px" /> and I am available remotely for consulting/development missions on CAS, pac4j, OAuth, OpenID Connect, SAML or more generally on authentication, application security, SSO or IAM.</p>
+      <p>&#8680; Contact me at <a href="mailto: jerome@casinthecloud.com">jerome&#64;casinthecloud.com</a>.</p>
+    </div>
+    <div class="row technologies">
+      <div class="col-sm">
+        <a target="_blank" href="https://github.com/apereo/cas"><img src="img/logo/apereo_cas.png" /></a>
+        <p>CAS is the SSO solution used by plenty of universities and companies all around the world.</p>
+        <p>As a committer (the main one in Europe) of the CAS Open Source project, I'm <a target="_blank" href="https://github.com/apereo/cas/graphs/contributors">one of its major contributors.</p>
       </div>
-
-      <div class="container">
-
-        <div class="row cas">
-          <div class="col-md-4 text-center"><a target="_blank" href="https://github.com/apereo/cas"><img src="img/logo/apereo_cas.png" /></a></div>
-          <div class="col-md-8 text-justify">
-            <p>CAS is the SSO solution used by plenty of universities and companies all around the world.</p>
-
-            <p>As a committer (the main one in Europe) of the CAS Open Source project, I'm <a target="_blank" href="https://github.com/apereo/cas/graphs/contributors">one of its major contributors</a> and I know very well its features and capabilities.</p>
-
-            <p>I talked about CAS at <a target="_blank" href="https://www.youtube.com/watch?v=paoADLHqB_w">Devoxx France</a> and for 8 years at the SFR telecom company, I have been in charge of one of the biggest CAS installations in the world (millions of users and logins each day).</p>
-
-            <p>I now work on CAS authentication projects for my clients.</p>
-          </div>
-        </div>
-
+      <div class="col-sm">
+        <a target="_blank" href="https://github.com/pac4j/pac4j"><img src="img/logo/pac4j.png" /></a>
+        <p>It's a Java security framework supporting many authentication mechanisms.</p>
+        <p>I am the <a target="_blank" href="https://github.com/pac4j/pac4j/graphs/contributors">creator and leader</a> of the pac4j Open Source project.</p>
       </div>
-
-      <div class="row pac4j">
-        <div class="container">
-          <div class="col-md-8 text-justify">
-            It's the security framework to use in Java. It is available for multiple environments (J2E, Spring, Play, Shiro, Vertx and etc.) and handles many authentication mechanisms (like CAS, basic auth, SAML, OpenID Connect, LDAP and JWT).
-            <br />
-            <p>As the <a target="_blank" href="https://github.com/pac4j/pac4j/graphs/contributors">creator and leader of the pac4j Open Source project</a>, I perfectly master this software. I presented pac4j at the <a target="_blank" href="https://www.youtube.com/watch?v=mAMdVuLqSvo">Paris JUG</a>.</p>
-
-            <p>I often support clients to integrate their applications with pac4j in the best way or add new features.</p>
-          </div>
-          <div class="col-md-4 text-center"><a target="_blank" href="https://github.com/pac4j/pac4j"><img src="img/logo/pac4j.png" /></a></div>
-        </div>
+      <div class="col-sm">
+        <img src="img/logo/other.png" />
+        <p>I can also help you on security protocols and libraries and more generally on authentication, security, SSO, and IAM with best practices and audit.</p>
       </div>
-
-      <div class="container">
-
-        <div class="row other">
-          <div class="col-md-4 text-center"><img src="img/logo/other.png" /></div>
-          <div class="col-md-8 text-justify">
-            <p>I can also bring my expertise on the OAuth, OpenID Connect and SAML protocols, their related tools and the security libraries.</p>
-
-            <p>More generally, I can advise you about authentication, security, SSO, and IAM with best practices and audit.</p>
-
-            <p>Lastly, I sometimes help my customers with architecture design, performance audit, and multi-technologies development.</p>
-          </div>
-        </div>
-
-        <hr />
-
-      </div>
-
-      <div class="row help">
-        <div class="container">
-          <div class="col-md-12">
-            <h4 class="text-center">
-              <p>If you are looking for a project manager, a scrum master or an agile coach in Bordeaux,</p>
-              <p>my wife <a target=_blank" href="https://www.linkedin.com/in/sophie-leleu-joly-41b495a6/">Sophie LELEU</a> <img src="img/other/sophie_leleu.jpg" width="40px" height="40px" />, <a target=_blank" href="https://www.pmi.org/certifications/types/agile-acp">PMI-ACP</a> certified, is the person you need.</p>
-            </h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-
-        <hr />
-
-        <div class="text-center clients"><h3>They work with us:</h3></div>
-
-        <div class="full-text-center"><img src="img/logo/clients.jpg" /></div>
-
-      </div>
-
     </div>
 
+    <hr />
+
+    <div class="text-center">
+      <h3>Our clients:</h3>
+      <img src="img/logo/clients.jpg" />
+    </div>
   </div>
 
   <div id="push"></div>
@@ -130,7 +78,7 @@
           var d = new Date();
           document.write(d.getFullYear());
         </script><br />
-      v2.4</div>
+        v2.5</div>
       <div class="col-md-4">
         <img src="img/logo/social_footer2.png" usemap="#sociallinks" />
         <map name="sociallinks">

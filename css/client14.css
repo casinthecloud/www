@@ -1,0 +1,69 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body a {
+  color: #005071;
+  font-weight: bold;
+}
+body a:hover {
+  color: #5BC0DE;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header {
+  background-image: url('/img/other/galaxy.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+.header a {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+.header a:hover {
+  color: #3399CC;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+.header h1 {
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+}
+.presentation {
+  font-size: 18px;
+  text-align: justify;
+  background-image: url('/img/other/clouds.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding: 30px 40px 10px 40px;
+}
+.sophie {
+  text-align: center;
+}
+.technologies {
+  text-align: center;
+}
+.technologies img {
+  padding-bottom: 15px;
+}
+.technologies .col-sm {
+  padding: 25px 15px 15px 30px;
+  border-style: solid;
+  margin: 10px 15px 10px 15px;
+  border-color: lightgray;
+  border-width: 1px;
+  border-radius: 5px;
+}
+#footer { margin-top: 60px; height: 120px; background-color: #005071; background-image: linear-gradient(60deg, #227293, #004060); background: -moz-linear-gradient(60deg, #227293, #004060); width: 100%; padding-top: 25px; text-align: center; }
+#footer a { color: #FFFFFF; margin-left: 10px; margin-right: 10px; font-weight: normal; }
+#footer a:hover { color: #3399CC; text-decoration: none; margin-left: 10px; margin-right: 10px; font-weight: normal; }
+.footLink { color: #FFFFFF ; font-size: 90%; margin-bottom: 15px; }
+.footLink>a { color: #FFFFFF; margin-left: 10px; margin-right: 10px; }
+.footLink>a:hover { color: #3399CC; text-decoration: none; margin-left: 10px; margin-right: 10px; }
+.footLink>span { margin-left: 10px; margin-right: 10px; }
+.copy { color: #3399CC; font-weight: bold; }
+html, body { height: 100%; }
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -180px; }
+#push { height: 180px; }

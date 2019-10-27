@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Expertise authentification - sécurité : CAS, pac4j, OAuth, OpenID Connect, SAML, SSO, IAM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="CAS in the cloud, la société de conseils sur CAS et pac4j" />
   <meta name="keywords" content="casinthecloud IAM CAS pac4j SSO github Open source committer Jérôme LELEU chairman expert Java security sécurité authentification authentication SAML OAuth OpenID Connect JWT LDAP J2E Play Spring Web MVC Spring Security Shiro" />
   <base href="/">
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,700,400' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap3.1.1.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/client13.css">
+  <link rel="stylesheet" href="/css/bootstrap-4.0.0.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/client14.css">
 </head>
 <body>
 
@@ -18,106 +18,58 @@
 
   <div class="header">
     <div class="container">
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5"><img alt="logo" src="img/logo/cas_in_the_cloud_logo.png" /></div>
-        <div class="col-md-5 text-right flags">
-          <a href="index-en.html">&rarr; ENGLISH</a>
+      <nav class="navbar navbar-expand-lg">
+        <img alt="logo" src="img/logo/cas_in_the_cloud_logo.png" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <span class="navbar-text">
+            <a href="index-en.html">&#8680; ENGLISH</a>
+          </span>
         </div>
-        <div class="col-md-1"></div>
-      </div>
+      </nav>
+      <h1>Société de conseils en<br/>sécurité et authentification</h1>
     </div>
   </div>
 
-  <div class="main">
-
-    <div>
-
-      <div class="text-center help">
-        <div class="container">
-          <h4>
-            <p>Je suis <a href="https://www.linkedin.com/in/jleleu" target="_blank">Jérôme LELEU</a> <img src="img/other/jerome_leleu.jpg" width="40px" height="40px" /> et j'ai fondé <b>CAS in the cloud</b> en 2014.</p>
-
-            <p>Je réalise des prestations d'expertise / conseil / développement sur CAS et pac4j,<br />mais également sur OAuth, OpenID Connect, SAML et plus généralement l'authentification, la sécurité, le SSO et l'IAM.</p>
-
-            <p>J'habite près de Bordeaux et travaille principalement à distance. Je me déplace également ponctuellement sur site pour mes clients.</p>
-
-            <p>Contactez-moi à <a href="mailto: jerome@casinthecloud.com">jerome&#64;casinthecloud.com</a></p>
-          </h4>
-        </div>
+  <div class="container">
+    <div class="presentation jerome">
+      <p>&#8680; Je suis <a href="https://www.linkedin.com/in/jleleu" target="_blank">Jérôme LELEU</a> <img src="img/other/jerome_leleu.jpg" width="40px" height="40px" /> et je réalise des prestations d'expertise / conseil / développement sur CAS et pac4j, mais également sur les protocoles OAuth, OpenID Connect, SAML et plus généralement sur l'authentification et la sécurité.</p>
+      <p>&#8680; J'habite près de Bordeaux et travaille principalement à distance. Je me déplace également ponctuellement sur site pour mes clients. Contactez-moi à <a href="mailto: jerome@casinthecloud.com">jerome&#64;casinthecloud.com</a>.</p>
+    </div>
+    <div class="row technologies">
+      <div class="col-sm">
+        <a target="_blank" href="https://github.com/apereo/cas"><img src="img/logo/apereo_cas.png" /></a>
+        <p>CAS est la solution de SSO utilisée par de nombreuses entreprises et universités en France et dans le monde. Le <a target="_blank" href="https://references.modernisation.gouv.fr/sites/default/files/SILL%202018%20-%20socle%20interministeriel%20de%20logiciels%20libres.pdf">gouvernement français recommande CAS</a>.</p>
+        <p>En tant que committer du projet Open Source CAS, j'en suis <a target="_blank" href="https://github.com/apereo/cas/graphs/contributors">un des plus gros contributeurs</a>.</p>
       </div>
-
-      <div class="container">
-
-        <div class="row cas">
-          <div class="col-md-4 text-center"><a target="_blank" href="https://github.com/apereo/cas"><img src="img/logo/apereo_cas.png" /></a></div>
-          <div class="col-md-8 text-justify">
-            <p>CAS est la solution de SSO utilisée par de nombreuses entreprises et universités en France et dans le monde.
-              Le <a target="_blank" href="https://references.modernisation.gouv.fr/sites/default/files/SILL%202018%20-%20socle%20interministeriel%20de%20logiciels%20libres.pdf">gouvernement français recommande CAS</a>.</p>
-
-            <p>En tant que committer du projet Open Source CAS (seul actif en Europe), j'en suis <a target="_blank" href="https://github.com/apereo/cas/graphs/contributors">un des plus gros contributeurs</a> et j'en connais très bien toutes les fonctionnalités et possibilités.</p>
-
-            <p>J'ai présenté CAS à <a target="_blank" href="https://www.youtube.com/watch?v=paoADLHqB_w">Devoxx France</a> et pendant 8 ans chez SFR, j’ai été en charge d’une des plus grosses installations CAS au monde (des millions d’utilisateurs et d’authentifications chaque jour).</p>
-
-            <p>Aujourd'hui, j'interviens sur de nombreuses problématiques d’authentification CAS pour mes clients.</p>
-          </div>
-        </div>
-
+      <div class="col-sm">
+        <a target="_blank" href="https://github.com/pac4j/pac4j"><img src="img/logo/pac4j.png" /></a>
+        <p>C’est un framework de sécurité Java supportant de nombreux mécanismes d'authentification.</p>
+        <p>Je suis le <a target="_blank" href="https://github.com/pac4j/pac4j/graphs/contributors">créateur et leader</a> du projet Open Source pac4j.</p>
       </div>
-
-      <div class="row pac4j">
-        <div class="container">
-          <div class="col-md-8 text-justify">
-            C’est le framework de sécurité à utiliser en Java. Il est disponible dans de multiples technologies (J2E, Spring, Play, Shiro, Vertx...) et gère de nombreux mécanismes d'authentification (CAS, basic auth, SAML, OpenID Connect, LDAP, JWT...)
-            <br />
-            <p>En tant que <a target="_blank" href="https://github.com/pac4j/pac4j/graphs/contributors">créateur et leader du projet Open Source pac4j</a>, j’en maîtrise parfaitement le fonctionnement et les nombreuses capacités. J'ai présenté pac4j au <a target="_blank" href="https://www.youtube.com/watch?v=mAMdVuLqSvo">Paris JUG</a>.</p>
-
-            <p>J'interviens régulièrement pour des clients afin de les aider à intégrer au mieux pac4j ou à ajouter de nouvelles fonctionnalités.</p>
-          </div>
-          <div class="col-md-4 text-center"><a target="_blank" href="https://github.com/pac4j/pac4j"><img src="img/logo/pac4j.png" /></a></div>
-        </div>
+      <div class="col-sm">
+        <img src="img/logo/other.png" />
+        <p>Je peux également vous aider sur les protocoles et librairies de sécurité et plus généralement sur les problématiques d'authentification, de sécurité, de SSO et d'IAM : best practices, audit...</p>
       </div>
-
-      <div class="container">
-
-        <div class="row other">
-          <div class="col-md-4 text-center"><img src="img/logo/other.png" /></div>
-          <div class="col-md-8 text-justify">
-            <p>Je peux également vous apporter mon expertise sur les protocoles OAuth, OpenID Connect, SAML, leurs outils associés et les librairies de sécurité.</p>
-
-            <p>Je peux vous conseiller plus généralement sur les problématiques d'authentification, de sécurité, de SSO et d'IAM : best practices, audit...</p>
-
-            <p>Enfin, j'interviens parfois sur de la conception d'architecture, de l'audit de performances ou du développement multi-technologies.</p>
-          </div>
-        </div>
-
-        <hr />
-
-      </div>
-
-      <div class="row help">
-        <div class="container">
-          <div class="col-md-12">
-            <h4 class="text-center">
-              <p>Si vous cherchez un chef de projet, un scrum master ou un coach agile sur Bordeaux,</p>
-              <p>ma femme <a target=_blank" href="https://www.linkedin.com/in/sophie-leleu-joly-41b495a6/">Sophie LELEU</a> <img src="img/other/sophie_leleu.jpg" width="40px" height="40px" />, certifiée <a target=_blank" href="https://www.pmi.org/certifications/types/agile-acp">PMI-ACP</a>, est la personne qu'il vous faut.</p>
-            </h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-
-        <hr />
-
-        <div class="text-center clients"><h3>Ils nous font confiance :</h3></div>
-
-        <div class="full-text-center"><img src="img/logo/clients.jpg" /></div>
-
-      </div>
-
     </div>
 
+    <hr />
+
+    <div class="presentation sophie">
+      <p>Si vous cherchez un chef de projet, un scrum master ou un coach agile sur Bordeaux,<br />
+      ma femme <a target=_blank" href="https://www.linkedin.com/in/sophie-leleu-joly-41b495a6/">Sophie LELEU</a> <img src="img/other/sophie_leleu.jpg" width="40px" height="40px" />, certifiée <a target=_blank" href="https://www.pmi.org/certifications/types/agile-acp">PMI-ACP</a>, est la personne qu'il vous faut.</p>
+    </div>
+
+    <hr />
+
+    <div class="text-center">
+      <h3>Nos clients :</h3>
+      <img src="img/logo/clients.jpg" />
+    </div>
   </div>
 
   <div id="push"></div>
@@ -133,7 +85,7 @@
           var d = new Date();
           document.write(d.getFullYear());
         </script><br />
-      v2.4</div>
+        v2.5</div>
       <div class="col-md-4">
         <img src="img/logo/social_footer2.png" usemap="#sociallinks" />
         <map name="sociallinks">
