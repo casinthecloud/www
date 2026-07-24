@@ -1,0 +1,251 @@
+:root {
+  --c-primary:      #005071;
+  --c-primary-dark: #003c56;
+  --c-accent:       #3399CC;
+  --c-accent-light: #5BC0DE;
+  --c-text:         #26343b;
+  --c-muted:        #5a6b73;
+  --c-border:       #e6e9ec;
+  --c-card-bg:      #ffffff;
+  --shadow-sm:      0 1px 3px rgba(0, 40, 60, 0.08);
+  --shadow-md:      0 10px 24px rgba(0, 80, 113, 0.14);
+  --radius:         12px;
+  --content-w:      1140px;
+}
+
+/* ---- Minimal reset ---- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--c-text);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; }
+
+body a {
+  color: var(--c-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+body a:hover { color: var(--c-accent); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; border-radius: 2px; }
+::selection { background: var(--c-primary); color: #fff; }
+
+/* ---- Layout helpers ---- */
+.container {
+  width: 100%;
+  max-width: var(--content-w);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#wrap { flex: 1 0 auto; width: 100%; }
+.content { padding-top: 28px; }
+
+/* ---- Header (starry background) ---- */
+.header {
+  position: relative;
+  background: url('/img/other/galaxy.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,28,42,0.18), rgba(0,28,42,0.55));
+  pointer-events: none;
+}
+.header-bar,
+.header-title { position: relative; z-index: 1; }
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.brand-logo {
+  display: block;
+  max-height: 50px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.lang-switch {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.lang-switch:hover {
+  color: #fff;
+  background-color: var(--c-accent);
+  border-color: var(--c-accent);
+  text-decoration: none;
+}
+
+.header-title {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0 30px;
+}
+.header h1 {
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: clamp(1.55rem, 1rem + 2.6vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+}
+
+/* ---- Presentation ---- */
+.presentation {
+  margin: 0;
+  padding: 22px 36px 18px;
+  border-radius: var(--radius);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),
+    url('/img/other/clouds.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 1.06rem;
+  line-height: 1.7;
+  text-align: justify;
+  color: var(--c-text);
+}
+.presentation p { margin: 0 0 9px; }
+.presentation p:last-child { margin-bottom: 0; }
+.presentation img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 2px;
+  box-shadow: 0 0 0 2px #fff, 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ---- Technologies ---- */
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 22px;
+}
+.tech-card {
+  background: var(--c-card-bg);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 22px 22px 22px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.tech-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: #d3dbe0;
+}
+.tech-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 128px;
+  margin-bottom: 14px;
+}
+.tech-logo img {
+  max-height: 128px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.technologies .tech-card:first-child .tech-logo img {
+  max-height: 104px;
+}
+.tech-card p {
+  margin: 0 0 9px;
+  font-size: 1rem;
+  color: var(--c-muted);
+  line-height: 1.62;
+}
+.tech-card p:last-child { margin-bottom: 0; }
+
+/* ---- Footer (compact) ---- */
+#footer {
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: 32px;
+  padding: 11px 0;
+  background-color: var(--c-primary);
+  background-image: linear-gradient(60deg, #227293, #004060);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 22px;
+}
+.footer-item { padding: 0; }
+#footer a {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color .2s ease;
+}
+#footer a:hover { color: var(--c-accent-light); text-decoration: none; }
+.copy { color: var(--c-accent-light); font-weight: 600; }
+
+/* ---- Responsive ---- */
+@media (max-width: 767.98px) {
+  .content { padding-top: 22px; }
+  .header { min-height: 240px; }
+  .header-bar { padding-top: 12px; padding-bottom: 12px; }
+  .brand-logo { max-height: 44px; }
+  .header-title { padding: 10px 0 22px; }
+  .presentation {
+    padding: 18px 18px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .technologies { grid-template-columns: 1fr; gap: 14px; margin-top: 18px; }
+  .tech-card { padding: 16px 16px 16px; }
+  .tech-logo { height: 104px; margin-bottom: 10px; }
+  .tech-logo img { max-height: 104px; }
+  #footer { margin-top: 26px; padding: 10px 0; }
+}
+
+@media (max-width: 575.98px) {
+  .header { min-height: 220px; }
+  .header h1 { font-size: 1.5rem; }
+  .footer-row { flex-direction: column; gap: 4px; }
+  .presentation img { width: 40px; height: 40px; }
+}

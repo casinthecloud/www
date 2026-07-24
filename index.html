@@ -9,80 +9,55 @@
   <base href="/">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="/css/bootstrap-4.0.0.min.css" />
-  <link rel="stylesheet" type="text/css" href="/css/client14.css">
+  <meta name="theme-color" content="#005071">
+  <link rel="stylesheet" type="text/css" href="/css/client15.css">
 </head>
 <body>
 
 <div id="wrap">
 
-  <div class="header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <img alt="logo" src="img/logo/cas_in_the_cloud_logo.png" />
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-          </ul>
-          <span class="navbar-text">
-            <a href="index-en.html">&#8680; ENGLISH</a>
-          </span>
-        </div>
-      </nav>
-      <h1>Société de conseils en<br/>sécurité et authentification</h1>
+  <header class="header">
+    <div class="container header-bar">
+      <img class="brand-logo" alt="CAS in the cloud" src="img/logo/cas_in_the_cloud_logo.png" />
+      <a class="lang-switch" href="index-en.html">&#8680; ENGLISH</a>
     </div>
-  </div>
+    <div class="container header-title">
+      <h1>Société de conseils en<br />sécurité et authentification</h1>
+    </div>
+  </header>
 
-  <div class="container">
-    <div class="presentation jerome">
-      <p>&#8680; Je suis <a href="https://www.linkedin.com/in/jleleu" target="_blank">Jérôme LELEU</a> <img src="img/other/jerome_leleu.jpg" width="40px" height="40px" /> et je réalise des prestations d'expertise / conseil / développement sur CAS et pac4j, mais également sur les protocoles OAuth, OpenID Connect, SAML et plus généralement sur l'authentification et la sécurité.</p>
+  <main class="container content">
+    <section class="presentation jerome">
+      <p>&#8680; Je suis <a href="https://www.linkedin.com/in/jleleu" target="_blank">Jérôme LELEU</a> <img src="img/other/jerome_leleu.jpg" alt="Jérôme LELEU" /> et je réalise des prestations d'expertise / conseil / développement sur CAS et pac4j, mais également sur les protocoles OAuth, OpenID Connect, SAML et plus généralement sur l'authentification et la sécurité.</p>
       <p>&#8680; J'habite près de Bordeaux et travaille principalement à distance. Contactez-moi à <a href="mailto: jerome@casinthecloud.com">jerome&#64;casinthecloud.com</a>.</p>
-    </div>
-    <div class="row technologies">
-      <div class="col-sm">
-        <a target="_blank" href="https://github.com/apereo/cas"><img src="img/logo/apereo_cas.png" /></a>
+    </section>
+
+    <section class="technologies">
+      <article class="tech-card">
+        <a class="tech-logo" target="_blank" href="https://github.com/apereo/cas"><img src="img/logo/apereo_cas.png" alt="Apereo CAS" /></a>
         <p>CAS est la solution de SSO utilisée par de nombreuses entreprises et universités en France et dans le monde. Le <a target="_blank" href="https://references.modernisation.gouv.fr/sites/default/files/SILL%202018%20-%20socle%20interministeriel%20de%20logiciels%20libres.pdf">gouvernement français recommande CAS</a>.</p>
         <p>En tant que committer du projet Open Source CAS, j'en suis <a target="_blank" href="https://github.com/apereo/cas/graphs/contributors">un des plus gros contributeurs</a>.</p>
-      </div>
-      <div class="col-sm">
-        <a target="_blank" href="https://github.com/pac4j/pac4j"><img src="img/logo/pac4j.png" /></a>
-        <p>C’est un framework de sécurité Java supportant de nombreux mécanismes d'authentification.</p>
+      </article>
+      <article class="tech-card">
+        <a class="tech-logo" target="_blank" href="https://github.com/pac4j/pac4j"><img src="img/logo/pac4j.png" alt="pac4j" /></a>
+        <p>C'est un framework de sécurité Java supportant de nombreux mécanismes d'authentification.</p>
         <p>Je suis le <a target="_blank" href="https://github.com/pac4j/pac4j/graphs/contributors">créateur et leader</a> du projet Open Source pac4j.</p>
-      </div>
-      <div class="col-sm">
-        <img src="img/logo/other2.png" />
+      </article>
+      <article class="tech-card">
+        <span class="tech-logo"><img src="img/logo/other2.png" alt="Autres technologies" /></span>
         <p>Je peux également vous aider sur les protocoles et librairies de sécurité et plus généralement sur les problématiques d'authentification, de sécurité, de SSO et d'IAM : best practices, audit...</p>
-      </div>
-    </div>
+      </article>
+    </section>
 
-    <hr />
-
-    <div class="text-center">
-      <h3>Quelques uns de nos clients :</h3>
-      <img src="img/logo/clients.jpg" />
-    </div>
-  </div>
-
-  <div id="push"></div>
+  </main>
 </div>
-<div id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <a href="mailto: contact@casinthecloud.com">contact&#64;casinthecloud.com</a>
-      </div>
-      <div class="col-md-4 copy">2014 -
-          <script>
-              var d = new Date();
-              document.write(d.getFullYear());
-          </script> &nbsp; - &nbsp; v2.5.2
-      </div>
-      <div class="col-md-4 copy">&copy; SARL CAS in the cloud</div>
-    </div>
+<footer id="footer">
+  <div class="container footer-row">
+    <span class="footer-item"><a href="mailto: contact@casinthecloud.com">contact&#64;casinthecloud.com</a></span>
+    <span class="footer-item copy">2014&nbsp;-&nbsp;<script>var d=new Date();document.write(d.getFullYear());</script>&nbsp;-&nbsp;v2.6.0</span>
+    <span class="footer-item copy">&copy; SARL CAS in the cloud</span>
   </div>
-</div>
+</footer>
 
 </body>
 </html>
