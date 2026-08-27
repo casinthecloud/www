@@ -59,7 +59,7 @@ a:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; borde
   background: url('/img/other/galaxy.jpg') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
-  min-height: 300px;
+  min-height: 310px;
 }
 .header::before {
   content: "";
@@ -82,7 +82,7 @@ a:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; borde
 }
 .brand-logo {
   display: block;
-  max-height: 50px;
+  max-height: 90px;
   max-width: 100%;
   width: auto;
   height: auto;
@@ -110,7 +110,7 @@ a:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; borde
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 0 30px;
+  padding: 8px 0 60px;
 }
 .header h1 {
   margin: 0;
@@ -227,10 +227,10 @@ a:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; borde
 /* ---- Responsive ---- */
 @media (max-width: 767.98px) {
   .content { padding-top: 22px; }
-  .header { min-height: 240px; }
+  .header { min-height: 255px; }
   .header-bar { padding-top: 12px; padding-bottom: 12px; }
-  .brand-logo { max-height: 44px; }
-  .header-title { padding: 10px 0 22px; }
+  .brand-logo { max-height: 64px; }
+  .header-title { padding: 10px 0 42px; }
   .presentation {
     padding: 18px 18px;
     text-align: left;
